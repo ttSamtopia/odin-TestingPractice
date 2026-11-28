@@ -32,6 +32,6 @@ test("String gets shifted, wrap alphabet backwards", () => {
 	expect(caesarCipher("abc", -3)).toBe("xyz");
 });
 
-test("String gets shifted, shift more that alphabet", () => {
+test("String gets shifted, shift more than alphabet", () => {
 	expect(caesarCipher("Hello", 29)).toBe("Khoor");
 });

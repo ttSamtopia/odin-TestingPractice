@@ -1,6 +1,6 @@
 import { capitalize } from "./capitalize.js";
 
-test("First letter capitalized out", () => {
+test("First letter capitalized", () => {
 	expect(capitalize("hello")).toBe("Hello");
 });
 
@@ -16,10 +16,10 @@ test("Empty string", () => {
 	expect(capitalize("")).toBe("");
 });
 
-test("First index, empty space", () => {
+test("First index is empty space", () => {
 	expect(capitalize(" hello")).toBe("Hello");
 });
 
-test("First index, not letter", () => {
+test("First index is not a letter", () => {
 	expect(capitalize("1abc")).toBe("1abc");
 });

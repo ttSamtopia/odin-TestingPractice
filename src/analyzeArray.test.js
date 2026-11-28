@@ -1,6 +1,6 @@
 import { analyzeArray } from "./analyzeArray.js";
 
-test("Array analyzed", () => {
+test("Array analyzed correctly", () => {
 	expect(analyzeArray([1, 8, 3, 4, 2, 6])).toEqual({
 		average: 4,
 		min: 1,
@@ -35,6 +35,6 @@ test("Array analyzed, decimal average", () => {
 	expect(result.length).toBe(6);
 });
 
-test("Array analyzed, empty", () => {
+test("Array analyzed, empty array error", () => {
 	expect(() => analyzeArray([])).toThrow("Can't analyze empty array");
 });
